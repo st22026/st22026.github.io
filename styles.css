@@ -1,0 +1,207 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #3d5fdd;
+  color: #ffffff;
+}
+
+body {
+  font-family: "Roboto Condensed";
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url("IMGS/mountain_view_dark.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.hero {
+  background-image: url("IMGS/mountain_view_1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  border-radius: 25px;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 16;
+  margin: 0;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Roboto Condensed";
+}
+
+th {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+table td {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Imgbox {
+  width: 720px;
+  margin: 50px auto 20px;
+}
+
+.Imgbox img {
+  width: 100%;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 25px rgb(255, 255, 255);
+}
+
+ul.thumb :hover {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transform: all 0.3s ease;
+}
+
+ul.thumb {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.thumb li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+ul.thumb li img {
+  border: 4px solid #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+.chalets {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: rgba(247, 247, 247, 0.7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chalet {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(247, 247, 247, 0.7);
+}
+
+.chalet h3 {
+  color: #333;
+}
+
+.chalet p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.chalet p strong {
+  font-weight: bold;
+}
+
+.About {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: rgba(247, 247, 247, 0.7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

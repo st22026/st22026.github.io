@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maunga Club Gallery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="IMGS/Maunga_Club_white.png" alt="logo" height="150px">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="Imgbox"><img src="IMGS/chalet_exterior.jpg"></div>
+  <ul class="thumb">
+    <li><a href="IMGS/adult_bedroom.jpg" target="Imgbox"><img src="IMGS/adult_bedroom.jpg" width="120px"></a></li>
+    <li><a href="IMGS/chalet_exterior.jpg" target="Imgbox"><img src="IMGS/chalet_exterior.jpg" width="120px"></a></li>
+    <li><a href="IMGS/kids_bedroom.jpg" target="Imgbox"><img src="IMGS/kids_bedroom.jpg" width="120px"></a></li>
+    <li><a href="IMGS/maunga_club_cabin.jpg" target="Imgbox"><img src="IMGS/maunga_club_cabin.jpg" width="120px"></a>
+    </li>
+    <li><a href="IMGS/kitchen.jpg" target="Imgbox"><img src="IMGS/kitchen.jpg" width="120px"></a></li>
+    <li><a href="IMGS/adult_bedroom_kereru.jpg" target="Imgbox"><img src="IMGS/adult_bedroom_kereru.jpg"
+          width="120px"></a></li>
+    <li><a href="IMGS/hallway.jpg" target="Imgbox"><img src="IMGS/hallway.jpg" width="120px"></a></li>
+
+  </ul>
+
+  <script> src = "https://code.jquery.com/jquery-migrate-3.4.1.js"</script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.thumb a').click(function (e) {
+        e.preventDefault();
+        var newImageUrl = $(this).attr("href");
+        var imgBox = $('.Imgbox img');
+
+        imgBox.fadeOut(200, function () {
+          imgBox.attr("src", newImageUrl).fadeIn(200);
+        });
+      });
+    });
+  </script>
+
+  <footer>&copy; Copyright 2023 Maunga Club.</footer>
+</body>

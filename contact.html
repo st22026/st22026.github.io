@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+</head>
+<style>
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(52, 48, 112);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+
+  .container {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+  .container form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .container label,
+  .container input,
+  .container textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .container input[type="text"],
+  .container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover {
+    background-color: #1fb98b;
+    color: #ffffff;
+  }
+
+  body {
+    background-image: url('IMGS/mountain_view_dark.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  input[type=file] {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+</style>
+
+<body>
+  <header>
+    <nav style="text-align: center;">
+      <img src="IMGS/Maunga_Club_white.png" alt="logo" height="150px">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contact-form">
+    <div class="container">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="Email">Email</label>
+        <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+        <label for="Identity Confirmation/">Identity Confirmation E.g: Passport, Drivers Licence</label>
+        <input type="file" accept="image/*">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Message.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+  </div>
+    <footer>&copy; Copyright 2023 Maunga Club.</footer>
+</body>
